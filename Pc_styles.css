@@ -11,6 +11,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: 1s;
 }
 
 html {
@@ -28,13 +29,15 @@ header {
     height: 10rem;
     display: flex;
     position: relative;
+    z-index: 99;
+    transition: 0.5s;
     /* background-color: black; */
 }
 
 header .logo-container {
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 75%;
 }
 
 header .logo-container img{
@@ -68,22 +71,19 @@ header nav ul a:hover {
     text-decoration: underline;
     cursor: pointer
 }
-
-header .left-bubble-container {
+.left-bubble-container {
     position: absolute;
     top: 0;
     left: 0;
     
 }
-
-header .right-bubble-container {
+.right-bubble-container {
     top: 0;
     right: 0;
     position: absolute;
    
 }
-
-header .right-bubble-container img{
+.right-bubble-container img{
     width: 75rem;
     z-index: 1;
 }
@@ -93,21 +93,27 @@ header .right-bubble-container img{
                             /* Main header */
 main {
     width: 100%;
-    /* height: calc(100vh - 10rem); */
+    
     /* background-color: aliceblue; */
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 main .main-header {
-    padding: calc((100vh - 42.9rem) / 2) 0;
+    /* padding: calc((100vh - 42.9rem) / 2) 0; */
     width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;    
     /* background-color: red; */
+}
+main .main-header div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    /* background-color: red; */
+    justify-content: center;
+    width: 80%;
+    height: 80%;
 }
 
 main .main-header h1{
@@ -156,6 +162,9 @@ main .about-us-container {
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10vh;
+    transition: none;
 }
 
 main .about-us-container article{
@@ -168,6 +177,7 @@ main .about-us-container article{
     border-radius: 2rem;
     box-shadow: 0px 0px 22px var(--backgroundColor);
     position: relative;
+    transition: none;
 }
 main .about-us-container article .tittle-cards {
     margin-top: 3.95%;
@@ -176,12 +186,13 @@ main .about-us-container article .tittle-cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(217, 217, 217, 0.01);
+    background: transparent;
     border-radius: 1rem;
 }
 
 main .about-us-container article .tittle-cards h4{
     /* padding: 2rem 0; */
+    
     font-family: 'Amiko';
     font-style: normal;
     font-weight: 600;
@@ -200,7 +211,7 @@ main .about-us-container article .cards {
 
 /* Card Mitchell */
 main .about-us-container article .cards .card-Mitchell{
-    width: 27.29%;
+    width: 25.29%;
     height: 100%;
     border-radius: 2.5rem;
     overflow: hidden;
@@ -208,15 +219,19 @@ main .about-us-container article .cards .card-Mitchell{
     z-index: 1;
     display: flex;
     justify-content: center;
+    transition: none;
+    
 }
 
 main .about-us-container article .cards .card-Mitchell:hover img{
     transform: scale(2) translateX(25%);
+    cursor: pointer;
     
 }
 
 main .about-us-container article .cards .card-Mitchell img{
     transition: transform 1.5s;
+    object-fit: cover;
     width: 100%;
     height: 100%;
     /* position: relative; */
@@ -242,6 +257,7 @@ main .about-us-container article .cards .card-Mitchell:hover .mini-info-Mitchell
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 main .about-us-container article .cards .card-Mitchell .mini-info-Mitchell h2{
@@ -279,7 +295,7 @@ main .about-us-container article .cards .card-Mitchell .mini-info-Mitchell butto
 /* Card Kevind */
 
 main .about-us-container article .cards .card-Kevind{
-    width: 27.29%;
+    width: 25.29%;
     height: 100%;
     border-radius: 2.5rem;
     overflow: hidden;
@@ -287,15 +303,18 @@ main .about-us-container article .cards .card-Kevind{
     z-index: 1;
     display: flex;
     justify-content: center;
+    transition: none;
 }
 
 main .about-us-container article .cards .card-Kevind:hover img{
     transform: scale(2) translateX(-25%);
+    cursor: pointer;
     
 }
 
 main .about-us-container article .cards .card-Kevind img{
     transition: transform 1.5s;
+    object-fit: cover;
     width: 100%;
     height: 100%;
     /* position: relative; */
@@ -321,6 +340,7 @@ main .about-us-container article .cards .card-Kevind:hover .mini-info-Kevind {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 main .about-us-container article .cards .card-Kevind .mini-info-Kevind h2{
