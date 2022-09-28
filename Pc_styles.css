@@ -264,7 +264,7 @@ main .about-us-container article .cards .card-Mitchell .mini-info-Mitchell h2{
     font-family: 'Amiko';
     font-style: normal;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 40px;
     text-align: center;
     color: var(--whiteColor);
@@ -277,7 +277,7 @@ main .about-us-container article .cards .card-Mitchell .mini-info-Mitchell li{
     font-family: 'Amiko';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 27px;
     color: var(--whiteColor);
 }
@@ -289,6 +289,8 @@ main .about-us-container article .cards .card-Mitchell .mini-info-Mitchell butto
     border: none;
     background-color: var(--whiteColor);
     border-radius: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
 }
 /* Card Mitchell */
 
@@ -347,7 +349,7 @@ main .about-us-container article .cards .card-Kevind .mini-info-Kevind h2{
     font-family: 'Amiko';
     font-style: normal;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 40px;
     text-align: center;
     color: var(--whiteColor);
@@ -360,7 +362,7 @@ main .about-us-container article .cards .card-Kevind .mini-info-Kevind li{
     font-family: 'Amiko';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 27px;
     color: var(--whiteColor);
 }
@@ -372,6 +374,8 @@ main .about-us-container article .cards .card-Kevind .mini-info-Kevind button{
     border: none;
     background-color: var(--whiteColor);
     border-radius: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
 }
 /* Card Kevind */
                             /* Main about us */

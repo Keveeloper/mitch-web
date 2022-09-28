@@ -38,3 +38,6 @@ window.addEventListener("scroll",function(){
         divKevind.style.transform = "translate(" + x + "px,0px)";
     }
 });
+
+    var botonMitchell = document.getElementById("mitchellBtn");
+    var botonKevind = document.getElementById("kevindBtn");
