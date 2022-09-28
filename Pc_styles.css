@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Quicksand:wght@300;500;700&display=swap');
+
+:root {
+    --backgroundColor: black;
+    --whiteColor: white;
+    --darkColor: #121317;
+    --lightColor: #D9D9D9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--backgroundColor);
+}
+
+/* ////////////////////////////////////////////////////////// Header ///////////////////////////////////////////////////////////////////////// */
+header {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    position: relative;
+    /* background-color: black; */
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+header .logo-container img{
+    margin-left: 12.6rem;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul a {
+    margin-left: 4rem;
+    font-family: 'Amiko';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: var(--whiteColor);
+    text-decoration: none;
+    z-index: 99;
+    position: relative;
+    
+}
+
+header nav ul a:hover {
+    text-decoration: underline;
+    cursor: pointer
+}
+
+header .left-bubble-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+header .right-bubble-container {
+    top: 0;
+    right: 0;
+    position: absolute;
+   
+}
+
+header .right-bubble-container img{
+    width: 75rem;
+    z-index: 1;
+}
+/* ////////////////////////////////////////////////////////// End Header ///////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////// Main /////////////////////////////////////////////////////////////////////////// */
+                            /* Main header */
+main {
+    width: 100%;
+    /* height: calc(100vh - 10rem); */
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+main .main-header {
+    padding: calc((100vh - 42.9rem) / 2) 0;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+main .main-header h1{
+    font-family: 'Amiko';
+    font-style: normal;
+    font-weight: 700;
+    /* font-size: 8.62105rem; */
+    font-size: 6.3vw;
+    color: var(--whiteColor);
+    position: relative;
+}
+
+main .main-header h3{
+    font-family: 'Amiko';
+    font-style: normal;
+    font-weight: 700;
+    /* font-size: 40.7407px; */
+    font-size: 3vw;
+    background: -webkit-linear-gradient(180deg, #C143FC, rgba(82, 102, 255, 0.675156), #00D1FF, #00D1FF, #FFFFFF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+main .main-header button{
+    margin-top: 3rem;
+    width: 22%;
+    height: 6.2rem;
+    background: -webkit-linear-gradient(0deg, #0094FF, #4F42FF, #4200FF);
+    border-radius: 10rem;
+    color: var(--whiteColor);
+    font-family: 'Amiko';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    /* line-height: 10px; */
+    position: relative;
+    border: none;
+}
+                            /* Main header */
+
+                            /* Main about us */
+main .about-us-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .about-us-container article{
+    width: 82.43%;
+    height: 82.43%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--darkColor);
+    border-radius: 2rem;
+    box-shadow: 0px 0px 22px var(--backgroundColor);
+    position: relative;
+}
+main .about-us-container article .tittle-cards {
+    margin-top: 3.95%;
+    width: 76.57%;
+    height: 11.58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(217, 217, 217, 0.01);
+    border-radius: 1rem;
+}
+
+main .about-us-container article .tittle-cards h4{
+    /* padding: 2rem 0; */
+    font-family: 'Amiko';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--whiteColor);
+}
+
+main .about-us-container article .cards {
+    padding: 1rem 0;
+    width: 76.57%;
+    height: 72.88%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #C143FC; */
+}
+
+main .about-us-container article .cards .card-Mitchell{
+    width: 27.29%;
+    height: 100%;
+    border-radius: 2.5rem;
+    overflow: hidden;
+    /* background-color: #0094FF; */
+}
+
+main .about-us-container article .cards .card-Mitchell:hover img{
+    /* object-position: -50px 0px; */
+    transform: scale(2) translateX(80px);
+    
+}
+
+/* .img-container:hover .profile { */
+
+main .about-us-container article .cards .card-Mitchell img{
+    /* object-position: 0px 0px; */
+    transition: transform 1.5s;
+    width: 100%;
+    height: 100%;
+}
+                            /* Main about us */
+/* ////////////////////////////////////////////////////////// End Main /////////////////////////////////////////////////////////////////////// */
