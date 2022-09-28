@@ -24,7 +24,7 @@ window.addEventListener("scroll",function(){
     var positionMitchell = divMitchell.getBoundingClientRect().top;
     var tamañoPantalla = window.innerHeight;
     
-    var x1 = (positionMitchell * -1) + 150;
+    var x1 = (positionMitchell * -1) + 170;
    
     if(positionMitchell < tamañoPantalla){
         divMitchell.style.transform = "translate(" + x1 + "px,0px)";
@@ -33,7 +33,7 @@ window.addEventListener("scroll",function(){
     var divKevind = document.getElementById("card-Kevind");
     var positionKevind = divKevind.getBoundingClientRect().top;
     
-    var x = positionKevind - 150;
+    var x = positionKevind - 170;
     if(positionKevind < tamañoPantalla){
         divKevind.style.transform = "translate(" + x + "px,0px)";
     }
