@@ -19,6 +19,7 @@ botonMitchell.addEventListener("click",(event) =>{
 botonKevind.addEventListener("click",(event) =>{
     informacion.classList.toggle("informationShow");
     kevind.classList.toggle("infoKevindShow");
+    container.style.display = 'none'
     informacion.style.animation = 'fadeInDownKevind 0.7s ease-out'
     moving = false;
     mitchell.hidden = true;
@@ -38,6 +39,7 @@ salirKevind.addEventListener("click",(event)=>{
     informacion.classList.remove("informationShow");
     kevind.classList.remove("infoKevindShow");  
     moving = true;
+    container.style.display = 'flex' 
 });
 
 window.addEventListener("scroll",function(){

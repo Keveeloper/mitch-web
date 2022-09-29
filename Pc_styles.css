@@ -435,7 +435,7 @@ main .about-us-container article .cards .card-Kevind .mini-info-Kevind button{
     padding: 200px;
     position: absolute;
     z-index: 99;
-    animation: FadeInUp 1s ease-out;
+    animation: FadeInUp 1s ease-in;
     display: flex;
     flex-direction: column;
 }
