@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Pc_styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Mitch</title>
 </head>
 <body id="main-header">
     <header>
         <figure class="logo-container">
-            <img src="./Resources/Logo.png" alt="logo Mitch">
+            <a href="#main-header"><img src="./Resources/Logo.png" alt="logo Mitch"></a>
         </figure>
         <nav>
             <ul>
                 <li><a href="#main-header">INICIO</a></li>
                 <li><a href="#about-us-container">QUIENES SOMOS</a></li>
                 <li><a href="">PROYECTOS</a></li>
-                <li><a href="">CONTACTO</a></li>
+                <li><a href="#about-us-container">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -36,13 +37,13 @@
             </div>
         </div>
         <section id="about-us-container" class="about-us-container">
-            <article>
-                <div class="tittle-cards">
-                    <h4>Desarrolladores con experiencia</h4>
+            <article id="articleCards">
+                <div  class="tittle-cards">
+                    <h4 id="tittle-cards">Desarrolladores con experiencia</h4>
                 </div>
-                <div class="cards">
+                <div id="Cards" class="cards">
                     <figure id="card-Mitchell" class="card-Mitchell">
-                        <img src="./Resources/Card_img.png" alt="">
+                        <img src="./Resources/Mitchell Profile.jpg" alt="">
                         <div class="mini-info-Mitchell">
                             <h2>Mitchell</h2>
                             <ul>
@@ -53,7 +54,7 @@
                         </div>
                     </figure>
                     <figure id="card-Kevind" class="card-Kevind">
-                        <img src="./Resources/Card_Kevind_img.png" alt="">
+                        <img src="./Resources/Kevind Profile.jpg" alt="">
                         <div class="mini-info-Kevind">
                             <h2>Kevind</h2>
                             <ul>
@@ -66,10 +67,135 @@
                 </div>
             </article>
         </section>
-        <section class="information">
-            <div id="infoMitchell"></div>>
-            
-            <div class="infoKevind"></div>
+        <section id="information" class="information">
+            <div id="infoMitchell">
+                <div class="superior">
+                    <button id="salirMitchell">
+                        <img src="Resources/Arrowhead-Left.png" alt="Flecha Atrás">
+                    </button>
+                    <div class="center">
+                        <div id="social-test">
+                            <ul class="social">
+                                <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li>
+                                <li><a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                            </li>
+                                <li><a href="#" class="fa fa-instagram" aria-hidden="true"></a></li>
+                                <li><a href="#" class="fa fa-github" aria-hidden="true"></a>
+                            </li>
+                            </ul>
+                        </div>
+                          </div>
+                </div>
+                <div class="BodyInfo">
+                    <div class="imagen">
+                        <img src="Resources/mitchellCuadrado.jpeg" alt="">
+                    </div>
+                    <div class="texto">
+                        <div class="saludo">
+                            <h1>Hola soy, <span>Mitchell</span></h1>
+                        </div>
+                       <div class="profesion">
+                            <h2>Analista y desarrollador de software</h2>
+                       </div>
+                       <div class="skills">
+                            <p>Tecnologías manejadas:</p>
+                            <div class="skillsLogos">
+                                <div class="Resaltado">
+                                    <img src="Resources/JavascriptLogo.png" alt="Javascript">
+                                    <p>javascript</p>
+                                </div>
+                                <div class="Resaltado">
+                                    <img src="Resources/SFLogo.png" alt="Salesforce">
+                                    <p>Salesforce</p>
+                                </div>
+                                <div class="Resaltado">
+                                    <img src="Resources/CsharpLogo.png" alt="C#">
+                                    <p>C#</p>
+                                </div>
+                                <div class="Resaltado">
+                                    <img src="Resources/HtmlLogo.png" alt="Html">
+                                    <p>Html</p>
+                                </div>
+                                <div class="Resaltado">
+                                    <img src="Resources/CSSLogo.png" alt="CSS">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="Resaltado">
+                                    <img src="Resources/DataBasesIcon.png" alt="DataBases">
+                                    <p>Bases de datos</p>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="botones">
+                           <button><img src="Resources/Trailhead-Logo-2x.webp" alt="trailhead"></button> 
+                           <button><img src="Resources/WhatsAppLogo.png" alt="Whatsapp"></button>
+                       </div>                        
+                    </div>
+                </div>
+            </div>
+            <div id="infoKevind">
+                <div class="superior">
+                    <button id="salirKevind">
+                        <img src="Resources/Arrowhead-Left.png" alt="Flecha Atrás">
+                    </button>
+                    <div class="center">
+                        <div id="social-test">
+                            <ul class="social">
+                                <li><i class="fa fa-facebook" aria-hidden="true"></a></i></li>
+                                <li><i class="fa fa-twitter" aria-hidden="true"></i>
+                            </li>
+                                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-github" aria-hidden="true"></i>
+                            </li>
+                            </ul>
+                        </div>
+                          </div>
+                </div>
+                <div class="BodyInfo">
+                   <div class="imagen">
+                        <img src="Resources/WhatsApp Image 2022-09-29 at 12.34.04 PM.jpeg" alt="">
+                   </div>
+                   <div class="texto">
+                        <h1>Hola soy, <span>Kevind</span></h1>
+                        <div class="profesion">
+                            <h2>Ingeniero Multimedia y desarrollador de software</h2>
+                       </div>
+                       <div class="skills">
+                            <p>Tecnologías manejadas:</p>
+                            <div class="skillsLogos">
+                                <div class="Resaltado">
+                                    <img src="Resources/JavascriptLogo.png" alt="Javascript">
+                                    <p>javascript</p>
+                                </div>
+                                <div class="Resaltado">
+                                    <img src="Resources/SFLogo.png" alt="Salesforce">
+                                    <p>Salesforce</p>
+                                </div>
+                                <div class="Resaltado">
+                                    <img src="Resources/UnityLogo.png" alt="Unity">
+                                    <p>Unity</p>
+                                </div>
+                                <div class="Resaltado">
+                                    <img src="Resources/HtmlLogo.png" alt="Html">
+                                    <p>HTML</p>
+                                </div>
+                                <div class="Resaltado">
+                                    <img src="Resources/CSSLogo.png" alt="CSS">
+                                    <p>css</p>
+                                </div>
+                                <div class="Resaltado">
+                                    <img src="Resources/DataBasesIcon.png" alt="DataBases">
+                                    <p>bases de datos</p>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="botones">
+                        <button><img src="Resources/Trailhead-Logo-2x.webp" alt="trailhead"></button> 
+                        <button><img src="Resources/WhatsAppLogo.png" alt="Whatsapp"></button>
+                    </div> 
+                   </div>
+                </div>
+            </div>
         </section>
     </main>
     <script src="index.js"></script>

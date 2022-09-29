@@ -17,6 +17,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -153,6 +154,10 @@ main .main-header button{
     /* line-height: 10px; */
     position: relative;
     border: none;
+    cursor: pointer;
+}
+main .main-header button:hover{
+    background: -webkit-linear-gradient(0deg, #0288e7, #463be4, #3d02e2);
 }
                             /* Main header */
 
@@ -198,6 +203,7 @@ main .about-us-container article .tittle-cards h4{
     font-weight: 600;
     font-size: 24px;
     color: var(--whiteColor);
+    transition: none;
 }
 
 main .about-us-container article .cards {
@@ -220,7 +226,6 @@ main .about-us-container article .cards .card-Mitchell{
     display: flex;
     justify-content: center;
     transition: none;
-    
 }
 
 main .about-us-container article .cards .card-Mitchell:hover img{
@@ -377,6 +382,280 @@ main .about-us-container article .cards .card-Kevind .mini-info-Kevind button{
     cursor: pointer;
     margin-bottom: 0.5rem;
 }
-/* Card Kevind */
-                            /* Main about us */
+.hiddenObject{
+    display: none;
+}
+.information{
+    display: none;
+}
+.information button{
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    margin: 10px;    
+}
+.information button img{
+    width: 3rem;
+    height: 3rem;
+    opacity: 1;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.informationShow{
+    width: 82.55%;
+    height: 80%;
+    margin: 53% 20px 20px 8.7%;
+    z-index: 99;
+    position: absolute ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+
+}
+.information .infoMitchellShow{
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    padding: 200px;
+    position: absolute;
+    z-index: 99;
+    animation: FadeInUp 1s ease-out;
+}
+
+.information .infoMitchellShow h1{
+    color: white;
+}
+.information .infoKevindShow{
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    padding: 200px;
+    position: absolute;
+    z-index: 99;
+    animation: FadeInUp 1s ease-out;
+    display: flex;
+    flex-direction: column;
+}
+.information .infoKevindShow h1{
+    color: white;
+}
+.superior{
+    margin: -20rem 0 0 -20rem;
+    /* background-color: green; */
+    width: 157%;
+    display: flex;
+}
+.BodyInfo{
+    display: flex;
+    /* background-color: rgb(255, 0, 0); */
+    height: calc(100vh - 130%);
+    margin: 0rem 0 20rem -20rem;
+    width: calc(100vw - 34%);
+}
+.BodyInfo .imagen{
+    width: 40%;
+    height: 100%;  
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: flex-start; 
+    /* background-color: #4200FF; */
+}
+.BodyInfo .imagen img{
+    width: 80%;
+    
+}
+.BodyInfo .texto{
+    width: 60%;
+    color: white;
+    height: 457px;  
+    padding: 5rem 0 0 0;
+    /* display: flex; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.BodyInfo .texto span{
+    color: #0094FF;
+}
+.BodyInfo .texto h1{
+    font-size: 25px;
+    font-family:  'Amiko';
+}
+.BodyInfo .texto h2{
+    font-size: 25px;
+    font-family:  'Amiko';
+}
+.BodyInfo .texto p{
+    font-family: 'Amiko';
+    font-size: 15px;
+}
+.BodyInfo .texto .skills{
+    text-align: center;
+    margin: 3rem 0 0 0;
+    font-size: 15px;
+}
+.BodyInfo .texto .skillsLogos{
+    display: flex;
+    margin: 2rem 0 2rem 0;
+    width: 100%;
+    justify-content: space-around;
+}
+.BodyInfo .texto .skillsLogos img{
+    width: 5rem;
+    height: 5rem;
+    /* margin: 0 2rem 0 0; */
+}
+.BodyInfo .texto .skillsLogos .Resaltado{
+    width: 10rem;
+    background-color: black;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 10rem;    
+    transition: 0.5;
+}
+.BodyInfo .texto .skills .skillsLogos .Resaltado img{
+    width: 6rem;
+    height: 6rem;
+    margin-top: 5px;    
+}
+.BodyInfo .texto .skillsLogos .Resaltado:hover{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 10rem; 
+    transition: 0.5s;   
+}
+.BodyInfo .texto .skills .skillsLogos .Resaltado p{
+   color: black;
+   font-size: 13px;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+.BodyInfo .botones{
+    width: 100%; 
+    margin: 3% 0 0 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;   
+}
+.BodyInfo .botones button{
+    width: 20%;
+    height: 6rem;
+    border-radius: 20px;
+    padding: 0 2px 0 2px;
+    background-color: #ffffff;
+    margin: 0 2rem 0 13rem;
+    display: flex;
+    align-items: center;
+    color: white;    
+}
+.BodyInfo .botones button:nth-child(2n){
+    width: 20%;
+    height: 6rem;
+    border-radius: 20px;
+    padding: 0 0 0 0;
+    background-color: #14af00;
+    margin: 0 2rem 0 13rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;    
+}
+.BodyInfo .botones button:hover{
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 1px white;
+}
+.BodyInfo .botones button:nth-child(2n):hover{
+    background-color: #14af00;
+    border-radius: 30px;
+}
+.BodyInfo .botones button img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.center {
+    display: table;
+    width:70vw;
+    float: right;
+    height: 20px;
+    margin: 0.1rem;
+  }
+  #social-test {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    font-size: 30px;
+  }
+  #social-test li {
+    color: rgba(255, 255, 255, 0.6);
+    list-style-type: none;
+    display: inline-block;
+    width: 50px;
+    padding: 1%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: ease .3s;
+  }
+  #social-test a{
+    text-decoration: none;
+    color: white;
+  }
+  .social:hover > li {
+    opacity: 0.5;
+    border: 1px solid rgba(167, 146, 129, 1);
+  }
+  
+  .social:hover > li:hover {
+    opacity: 1;
+    border: 1px solid rgba(167, 146, 129, 1);
+  }
+
+/* /////////////////////////////////////keyframes///////////////////////////////////////////////////////////////////// */
+@keyframes fadeInDownKevind {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInDownMitchell {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes FadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
 /* ////////////////////////////////////////////////////////// End Main /////////////////////////////////////////////////////////////////////// */
